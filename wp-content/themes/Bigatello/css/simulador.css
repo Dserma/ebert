@@ -1,0 +1,52 @@
+.page-simulador{
+    background-image: url('../images/bg-simulador.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.seta::before{
+    position: absolute;
+    content: "";
+    background-image: url('../images/seta-vermelha-esq.png');
+    width: 60px;
+    height: 30px;
+    left: -60px;
+    top: 0;
+}
+
+.button-simulador{
+    border: 2px solid #b1b2b0;
+    background: transparent;
+    width: 80%;
+    position: relative;
+    padding: 15px 20px;
+}
+
+.button-simulador img{
+    transition: all 0.5s;
+}
+
+.button-simulador::after{
+    position: absolute;
+    content: "";
+    background-image: url('../images/barra-botao.png');
+    width: 55px;
+    height: 68px;
+    top: 0;
+    right: 30px;
+    transition: all 0.5s;
+}
+
+.button-simulador:hover{
+    background-color: #b90a13;
+    color: #FFF !important;
+    text-decoration: none;
+}
+
+.button-simulador:hover img{
+    filter: hue-rotate(-540deg) invert(100%) brightness(150%);
+}
+
+.button-simulador:hover::after{
+    background-image: url('../images/barra-botao-hover.png');
+}
